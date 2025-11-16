@@ -1,0 +1,12 @@
+name: SteelVisionIoT
+description: Control the LED from the Arduino IoT Cloud using RPC calls
+ports: []
+bricks:
+- arduino:arduino_cloud:
+    variables:
+      ARDUINO_DEVICE_ID: 1905d828-c4a3-47e2-b8d5-35bb9e1c857b
+      ARDUINO_SECRET: 8mPflZJQ307FHry?UG@fC9zuU
+- arduino:video_object_detection:
+    model: face-detection
+- arduino:web_ui: {}
+icon: ☁️
